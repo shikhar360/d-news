@@ -5,7 +5,7 @@ import Hero from '../components/Hero';
 
 export default function Home() {
   return (
-    <div className="bg-black w-full min-h-screen">
+    <div className=" bg-gradient-to-br from-black to-zinc-700 w-full min-h-screen overflow-x-hidden">
       <Hero/>
     </div>
   )

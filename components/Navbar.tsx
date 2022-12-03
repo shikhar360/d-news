@@ -34,7 +34,7 @@ export default function Navbar() {
   
 
   return (
-    <div className="sm:w-11/12 w-full mx-auto my-1 p-0 bg-black/50  text-white flex items-start  backdrop-blur-sm justify-center transition-all duration-300 ease-linear absolute top-0 left-2/4 -translate-x-1/2">
+    <div className="sm:w-11/12 w-full mx-auto my-1 p-0 bg-transparent  text-white flex items-start  backdrop-blur-sm justify-center transition-all duration-300 ease-linear absolute top-0 left-2/4 -translate-x-1/2">
       <div className=" cursor-pointer flex items-center mt-3 mx-3 justify-center ">
         <span><img src="/images/logo.png" alt="logo"  className="w-9 mr-2" /></span> D-News
       </div>
@@ -56,26 +56,18 @@ export default function Navbar() {
 
         {isActive || width > sm ? (
           <>
-            <span className="cursor-pointer hover:bg-green-500 p-1.5 rounded-xl transition-all duration-300 ease-linear  ">
+            <span className="cursor-pointer hover:bg-amber-100 shadow-lg shadow-amber-100 hover:text-zinc-800 bg-transparent  p-1.5 rounded-xl transition-all duration-300 ease-linear  ">
             <Link href={"/"}>
              Home
             </Link>
             </span>
-            <span className="cursor-pointer hover:bg-green-500 p-1.5 rounded-xl transition-all duration-300 ease-linear  ">
-            <Link href={"/AllNFT"}>
+            <span className="cursor-pointer hover:bg-amber-100 shadow-lg shadow-amber-100 hover:text-zinc-800 bg-transparent  p-1.5 rounded-xl transition-all duration-300 ease-linear  ">
+            <Link href={"/AllNews"}>
 
-             All News
+             Publish
             </Link>
             </span>
-            <span className="cursor-pointer hover:bg-green-500 p-1.5 rounded-xl transition-all duration-300 ease-linear ">
-              <Link href={"/Mint"}>
-              
-            Upload News
-              </Link>
-            </span>
-            <span className="cursor-pointer hover:bg-green-500  rounded-xl transition-all duration-300 ease-linear  ">
-           
-            </span>
+          
           </>
         ) : null}
       </div>
